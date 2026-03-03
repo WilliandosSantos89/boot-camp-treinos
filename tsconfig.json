@@ -1,5 +1,5 @@
 {
-  
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": { 
 
     
@@ -8,7 +8,7 @@
     "target": "es2024", //ESM
     "skipLibCheck": true,
     "strict": true,
-    "outDir": ".//dist",
+    "outDir": "./dist",
    
   },
   "include": ["src"]
