@@ -1,4 +1,5 @@
-//console.log("Hello World");
+
+import "dotenv/config";
 import Fastify from "fastify";
 
 // Cria a instância do servidor com logs ativados
@@ -11,7 +12,7 @@ fastify.get("/", async () => {
 
 // Inicia o servidor na porta 3000
 try {
-  await fastify.listen({ port: 3000 });
+  await fastify.listen({ port: Number(process.env.PORT) || 8081 });
 } catch (err) {
   fastify.log.error(err);
   process.exit(1);
